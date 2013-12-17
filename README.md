@@ -1,5 +1,4 @@
-#blox  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
-
+#blox  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![GitHub version](https://badge.fury.io/gh/SQLIagencych%2Fblox.png)](http://badge.fury.io/gh/SQLIagencych%2Fblox)
 ====
 
 ### A Component Library 
