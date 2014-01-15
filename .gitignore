@@ -6,6 +6,5 @@ dist
 app/_bower_components
 test
 # Editors
-
-.sublime-project
-.sublime-workspace
+*.sublime-project
+*.sublime-workspace
