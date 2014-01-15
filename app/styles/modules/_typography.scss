@@ -1,6 +1,11 @@
 html,
 :root {
-  font-size: $base-font-size;
+  font-size: $font-size-base;
+}
+
+body {
+  font-family: $font-family-base;
+  color: $black;
 }
 
 a,
