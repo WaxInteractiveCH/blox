@@ -11,8 +11,8 @@ blox
 From the command line:
 
 1. Install `grunt-cli` globally with `npm install -g grunt-cli`.
-2. Navigate to the root `/scratch` directory, then run `npm install`. npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
-2. Navigate to the root `/scratch` directory, then run `bower install`. npm will look at [bower.json](bower.json) and automatically install the necessary libraries listed there.
+2. Navigate to the root `/blox` directory, then run `npm install`. npm will look at [package.json](package.json) and automatically install the necessary local dependencies listed there.
+2. Navigate to the root `/blox` directory, then run `bower install`. bower will look at [bower.json](bower.json) and automatically install the necessary libraries listed there.
 
 When completed, you'll be able to run the various Grunt commands provided from the command line.
 
