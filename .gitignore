@@ -1,5 +1,6 @@
 #Temporary or build folders for grunt
 node_modules
+npm-debug.log
 dist
 .grunt
 .tmp

@@ -1,0 +1,15 @@
+html,
+:root {
+  font-size: $base-font-size;
+}
+
+a,
+a:visited {
+  color: $blue;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: lighten($blue, 10%);
+}
