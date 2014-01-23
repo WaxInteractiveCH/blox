@@ -1,16 +1,20 @@
-/* =======================
-	 Variables
-======================= */
+// =======================
+//	 Variables
+// =======================
 
-$mediaQueries : 500px; /* We can set the breakpoint here */
 $sidebar-width : 200px;
 
-/* =======================
-	 Global Styles
-======================= */
+// =======================
+//	 Global Styles
+// =======================
 
 * {
   box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
 }
 
 body {
@@ -19,14 +23,16 @@ body {
 	overflow: hidden;
 }
 
-/* =======================
-	 Header + Nav
-======================= */
+// =======================
+//	 Header + Nav
+// =======================
 
 .header {
 	width: 100%;
 	overflow: hidden;
 	text-align: center;
+  background: $gray-darker;
+  color: $white;
 
 	.nav {
 		padding: 0;
@@ -34,25 +40,108 @@ body {
 	}
 
 	/* Desktop style */
-	@media (min-width: $mediaQueries) {
-		position: fixed;
+  @include MQ(Splus) {
+  	position: fixed;
 		left: 0;
+    top: 0;
+    bottom: 0;
 		width: $sidebar-width;
 		text-align: left;
 	}
 }
 
-/* =======================
-	 Content
-======================= */
+// =======================
+//   Content
+// =======================
 
 .content {
 	width: 100%;
-	overflow: hidden;
+	overflow: auto;
+  padding: 1rem;
 
 	/* Desktop style */
-	@media (min-width: $mediaQueries) {
+	@include MQ(Splus) {
 		position: absolute;
 		left: $sidebar-width;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
 	}
 }
+
+
+// =======================
+//   Banners
+// =======================
+
+.banner,
+%banner {
+  width: 100%;
+  padding: 1rem 1rem;
+  margin-left: -1rem;
+}
+
+.banner__header {
+  font-size: 1rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+}
+
+// Color swatch banners
+.banner--aqua,
+.banner--blue,
+.banner--navy,
+.banner--teal,
+.banner--green,
+.banner--olive,
+.banner--lime,
+.banner--yellow,
+.banner--orange,
+.banner--red,
+.banner--fuchsia,
+.banner--purple,
+.banner--maroon,
+.banner--white,
+.banner--gray-lighter,
+.banner--gray-light,
+.banner--gray,
+.banner--gray-dark,
+.banner--gray-darker,
+.banner--black {
+  @extend %banner;
+}
+
+// Some need light text for dark backgrounds
+.banner--navy,
+.banner--orange,
+.banner--red,
+.banner--fuchsia,
+.banner--maroon,
+.banner--purple,
+.banner--gray-dark,
+.banner--gray-darker,
+.banner--black {
+  color: $white;
+}
+
+.banner--aqua           { background-color: $aqua; }
+.banner--blue           { background-color: $blue; }
+.banner--navy           { background-color: $navy; }
+.banner--teal           { background-color: $teal; }
+.banner--green          { background-color: $green; }
+.banner--olive          { background-color: $olive; }
+.banner--lime           { background-color: $lime; }
+.banner--yellow         { background-color: $yellow; }
+.banner--orange         { background-color: $orange; }
+.banner--red            { background-color: $red; }
+.banner--fuchsia        { background-color: $fuchsia; }
+.banner--purple         { background-color: $purple; }
+.banner--maroon         { background-color: $maroon; }
+.banner--white          { background-color: $white; }
+.banner--gray-lighter   { background-color: $gray-lighter; }
+.banner--gray-light     { background-color: $gray-light; }
+.banner--gray           { background-color: $gray; }
+.banner--gray-dark      { background-color: $gray-dark; }
+.banner--gray-darker    { background-color: $gray-darker; }
+.banner--black          { background-color: $black; }

@@ -18,3 +18,8 @@ a:hover {
   text-decoration: underline;
   color: lighten($blue, 10%);
 }
+
+.lead {
+  font-size: 1.5rem;
+  margin: .5rem 0;
+}

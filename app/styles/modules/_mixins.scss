@@ -1,3 +1,4 @@
+ 
 // Grid System
 // -----------
 
@@ -196,3 +197,90 @@
     @include calc-grid($i, $class, $type);
   }
 }
+ 
+// Here are some variables, then a mixin and then an application of the mixin - this will only compile using Sass 3.2
+
+//mixin
+@mixin MQ($canvas) {
+  @if $canvas == XS {
+    @media only screen and (min-width: $XS) and (max-width: $S - 1) { @content; }
+  }
+  @else if $canvas == S {
+    @media only screen and (min-width: $S) and (max-width: $M - 1) { @content; }
+  }
+  @else if $canvas == M {
+    @media only screen and (min-width: $M) and (max-width: $L - 1) { @content; }
+  }
+  @else if $canvas == L {
+    @media only screen and (min-width: $L) and (max-width: $XL - 1) { @content; }
+  }
+  @else if $canvas == XL {
+    @media only screen and (min-width: $XL) and (max-width: $XXL - 1) { @content; }
+  }
+  @else if $canvas == XXL {
+    @media only screen and (min-width: $XXL) { @content; }
+  }
+  @else if $canvas == XSplus {
+    @media only screen and (min-width: $XS) { @content; }
+  }
+  @else if $canvas == Splus {
+    @media only screen and (min-width: $S) { @content; }
+  }
+  @else if $canvas == Mplus {
+    @media only screen and (min-width: $M) { @content; }
+  }
+  @else if $canvas == Lplus {
+    @media only screen and (min-width: $L) { @content; }
+  }
+  @else if $canvas == XLplus {
+    @media only screen and (min-width: $XL) { @content; }
+  }
+  @else if $canvas == XXLplus {
+    @media only screen and (min-width: $XXL) { @content; }
+  }
+  @else if $canvas == XSneg {
+    @media only screen and (max-width: $XS) { @content; }
+  }
+  @else if $canvas == Sneg {
+    @media only screen and (max-width: $S) { @content; }
+  }
+  @else if $canvas == Mneg {
+    @media only screen and (max-width: $M) { @content; }
+  }
+  @else if $canvas == Lneg {
+    @media only screen and (max-width: $L) { @content; }
+  }
+  @else if $canvas == XLneg {
+    @media only screen and (max-width: $XL) { @content; }
+  }
+  @else if $canvas == XXLneg {
+    @media only screen and (max-width: $XXL) { @content; }
+  }
+  @else if $canvas == StoL {
+    @media only screen and (min-width: $S) and (max-width: $L - 1) { @content; }
+  }
+}
+
+//demonstration of use
+/*
+.h1 {
+  @include MQ(XS) {
+    font-size: 0.9em;
+  }
+  @include MQ(S) {
+    font-size: 1em;
+  }
+  @include MQ(M) {
+    font-size: 1.1em;
+  }
+  @include MQ(L) {
+    font-size: 1.2em;
+  }
+  @include MQ(XL) {
+    font-size: 1.3em;
+  }
+  @include MQ(XXL) {
+    font-size: 1.4em;
+  }
+}
+*/ 
