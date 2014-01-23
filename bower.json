@@ -2,11 +2,12 @@
   "name": "blox",
   "version": "0.1.0",
   "dependencies": {
-    "sass-bootstrap": "~3.0.0",
+  //  "sass-bootstrap": "~3.0.0",
     "modernizr": "~2.6.2",
     "jquery": "~1.10.2",
-    "font-awesome": "~4.0.0",
-    "prismjs": "*"
+    "font-awesome": "~4.0.3",
+    "prismjs": "*",
+    "bootstrap-sass": "https://github.com/twbs/bootstrap-sass.git#~2.0.3"
   },
   "devDependencies": {}
 }
