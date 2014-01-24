@@ -13,5 +13,7 @@ app/_bower_components/*
 # Password file for grunt-deploy
 .ftppass
 # Editors
+*.sublime-project
+*.sublime-workspace
 .sublime-project
 .sublime-workspace 
