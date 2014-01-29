@@ -24,6 +24,7 @@ $yellow:  #FFDC00 !default;
 $orange:  #FF851B !default;
 $red:     #FF4136 !default;
 $fuchsia: #F012BE !default;
+$pink:    $fuchsia !default;
 $purple:  #B10DC9 !default;
 $maroon:  #85144B !default;
 
@@ -36,11 +37,16 @@ $gray-dark:    #777 !default;
 $gray-darker:  #444 !default;
 $black:        #111 !default;
 
+// Base variables
+// -------------------------
+$body-bg:              $white - 10 !default;
+$border-radius-base:   3px !default;
 
 // Fonts
 // -------------------------
 
-$font-family-sans-serif:  "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$font-family-sans-serif:  'Source Sans Pro', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $font-family-serif:       Georgia, "Times New Roman", Times, serif !default;
 $font-family-monospace:   Monaco, Menlo, Consolas, "Courier New", monospace !default;
 $font-family-base:        $font-family-sans-serif !default;
@@ -52,12 +58,13 @@ $font-size-small:         ceil($font-size-base * 0.85) !default; // ~12px
 $line-height-base:        1.428571429 !default; // 20/14
 $line-height-computed:    floor($font-size-base * $line-height-base) !default; // ~20px
 
-$headings-font-family:    $font-family-base !default;
+$headings-font-family:    'Oswald', $font-family-base !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 
 $text-color-base:         $gray-dark !default;
-
+$link-color:              $blue !default;
+$link-color-hover:        $blue + 20;
 
 // Media Query Breakpoints
 $XS:   200px !default;
@@ -111,10 +118,36 @@ $grid-gutter-width:         30px !default;
 $grid-float-breakpoint:     $screen-sm-min !default;
 
 
+// Transitions
+// -------------------------
 
+$trans-duration: 150ms !default;
 
+// Navbar and Navs
+// -------------------------
 
+$navbar-height: 40px;
+$navbar-margin-bottom: 20px;
+//=== Shared nav styles
+$nav-link-padding:                          10px 15px !default;
+$nav-link-hover-bg:                         $gray-lighter !default;
 
+$nav-disabled-link-color:                   $gray-light !default;
+$nav-disabled-link-hover-color:             $gray-light !default;
+
+$nav-open-link-hover-color:                 $white !default;
+
+//== Tabs
+$nav-tabs-border-color:                     $gray-light - 10 !default;
+
+$nav-tabs-link-hover-border-color:          transparent !default;
+
+$nav-tabs-active-link-hover-bg:             $body-bg !default;
+$nav-tabs-active-link-hover-color:          $gray !default;
+$nav-tabs-active-link-hover-border-color:   transparent !default;
+
+$nav-tabs-justified-link-border-color:            transparent !default;
+$nav-tabs-justified-active-link-border-color:     $body-bg !default;
 
 // Container sizes
 // --------------------------------------------------
@@ -134,3 +167,4 @@ $container-lg:                 $container-large-desktop !default;
 // Blox Docs variables
 // -------------------------
 $blx-dox-sidebar-width : 200px;
+

@@ -8,18 +8,28 @@ body {
   color: $black;
 }
 
-a,
-a:visited {
-  color: $blue;
-  text-decoration: none;
-}
 
-a:hover {
-  text-decoration: underline;
-  color: lighten($blue, 10%);
+a {
+  color: $link-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus {
+    color: $link-color-hover;
+    text-decoration: underline;
+  }
 }
 
 .lead {
   font-size: 1.5rem;
   margin: .5rem 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $headings-font-family;
 }

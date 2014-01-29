@@ -8,8 +8,8 @@
   'modules/variables',
   'modules/mixins';
 
-// All styles here should be prefixed .blx-dox- to scope doc styles
-// and prevent conflicts with any component styles
+// All styles here should be prefixed .blx-dox- to scope
+// doc styles and prevent conflicts with any component styles
 
 
 // =======================
@@ -17,13 +17,10 @@
 // =======================
 
 .blx-dox-bar {
-  width: 100%;
-  overflow: hidden;
-  text-align: center;
-  background: $gray-darker;
-  color: $white;
+  background: linear-gradient($gray-lighter + 10, $gray-lighter);
+  color: $body-bg;
 
-  /* Desktop style */
+  /* Desktop style
   @include MQ(Mplus) {
     position: fixed;
     left: 0;
@@ -32,11 +29,33 @@
     width: $blx-dox-sidebar-width;
     text-align: left;
   }
+  */
+}
+
+.blx-dox-header--logo__link {
+  color: rgba($gray-darker, .3);
+  font-family: $headings-font-family;
+  font-weight: bold;
+  text-shadow: 1px 1px 0 $white;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  transition: color $trans-duration linear;
+  &:hover {
+    text-decoration: none;
+    color: rgba($gray-darker, 1);
+
+  }
+  @include MQ(Mplus) {
+    float: left;
+  }
 }
 
 .blx-dox-header--nav {
-  padding: 0;
-  list-style: none;
+  margin-top: 0;
+  font-family: $headings-font-family;
+  @include MQ(Mplus) {
+    float: right;
+  }
 }
 
 
@@ -48,7 +67,7 @@
   overflow: auto;
   padding: 1rem;
 
-  /* Desktop style */
+  /* Desktop style
   @include MQ(Mplus) {
     position: absolute;
     left: $blx-dox-sidebar-width;
@@ -57,15 +76,20 @@
     right: 0;
 
   }
+  */
+}
+
+.blox-logo {
+  width: 32px;
+  height: 33px;
+  display: inline-block;
+  position: relative;
+  top: 3px;
 }
 
 // =======================
 //   Blox Grid
 // =======================
-
-.blx-dox-grid {
-
-}
 
 .show-grid {
   margin-bottom: 15px;
