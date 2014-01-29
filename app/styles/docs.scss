@@ -1,0 +1,82 @@
+
+// this should contain the style for the website (doc - blox-doc.css) not the style of the choosen component
+// the style who are not included inside the exportable blox.css
+
+@import 'compass';
+
+@import
+  'modules/variables',
+  'modules/mixins';
+
+// All styles here should be prefixed .blx-dox- to scope doc styles
+// and prevent conflicts with any component styles
+
+
+// =======================
+//   Header + Nav
+// =======================
+
+.blx-dox-bar {
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  background: $gray-darker;
+  color: $white;
+
+  /* Desktop style */
+  @include MQ(Mplus) {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: $blx-dox-sidebar-width;
+    text-align: left;
+  }
+}
+
+.blx-dox-header--nav {
+  padding: 0;
+  list-style: none;
+}
+
+
+// =======================
+//   Content
+// =======================
+
+.blx-dox-content {
+  overflow: auto;
+  padding: 1rem;
+
+  /* Desktop style */
+  @include MQ(Mplus) {
+    position: absolute;
+    left: $blx-dox-sidebar-width;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+  }
+}
+
+// =======================
+//   Blox Grid
+// =======================
+
+.blx-dox-grid {
+
+}
+
+.show-grid {
+  margin-bottom: 15px;
+  font-size: .75rem;
+  color: rgba($text-color-base, .8);
+}
+.show-grid [class^="col-"] {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #eee;
+  background-color: rgba($blue,.15);
+  border: 1px solid #ddd;
+  border: 1px solid rgba($blue,.2);
+}

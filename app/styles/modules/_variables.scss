@@ -56,14 +56,16 @@ $headings-font-family:    $font-family-base !default;
 $headings-font-weight:    500 !default;
 $headings-line-height:    1.1 !default;
 
- 
+$text-color-base:         $gray-dark !default;
+
+
 // Media Query Breakpoints
 $XS:   200px !default;
 $S:    500px !default;
 $M:    760px !default;
 $L:    1008px !default;
 $XL:   1760px !default;
-$XXL:  2880px !default; 
+$XXL:  2880px !default;
 
 // Media queries breakpoints
 // --------------------------------------------------
@@ -128,3 +130,7 @@ $container-md:                 $container-desktop !default;
 // Large screen / wide desktop
 $container-large-desktop:      ((1140px + $grid-gutter-width)) !default;
 $container-lg:                 $container-large-desktop !default;
+
+// Blox Docs variables
+// -------------------------
+$blx-dox-sidebar-width : 200px;

@@ -2,7 +2,7 @@
 //	 Variables
 // =======================
 
-$sidebar-width : 200px;
+
 
 // =======================
 //	 Global Styles
@@ -23,52 +23,6 @@ body {
 	overflow: hidden;
 }
 
-// =======================
-//	 Header + Nav
-// =======================
-
-.header {
-	width: 100%;
-	overflow: hidden;
-	text-align: center;
-  background: $gray-darker;
-  color: $white;
-
-	.nav {
-		padding: 0;
-		list-style: none;
-	}
-
-	/* Desktop style */
-  @include MQ(Splus) {
-  	position: fixed;
-		left: 0;
-    top: 0;
-    bottom: 0;
-		width: $sidebar-width;
-		text-align: left;
-	}
-}
-
-// =======================
-//   Content
-// =======================
-
-.content {
-	width: 100%;
-	overflow: auto;
-  padding: 1rem;
-
-	/* Desktop style */
-	@include MQ(Splus) {
-		position: absolute;
-		left: $sidebar-width;
-    top: 0;
-    bottom: 0;
-    right: 0;
-
-	}
-}
 
 
 // =======================
