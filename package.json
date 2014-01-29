@@ -31,7 +31,7 @@
     "time-grunt": "~0.1.1",
     "assemble": "~0.4.17",
     "permalinks": "~0.1.8",
-    "grunt-gh-pages": "~0.8.1",
+    "grunt-gh-pages": "~0.9.0",
     "grunt-recess": "~0.4.0"
   },
   "engines": {
