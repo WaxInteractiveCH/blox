@@ -147,7 +147,9 @@ module.exports = function (grunt) {
       },
       dist: {
         options: {
-          generatedImagesDir: '<%= yeoman.dist %>/images/generated'
+          generatedImagesDir: '<%= yeoman.dist %>/images/generated',
+          debugInfo: false,
+          outputStyle: 'compressed'
         }
       },
       server: {
@@ -259,6 +261,13 @@ module.exports = function (grunt) {
       //         ]
       //     }
       // }
+      bloxcss: {
+        files: {
+          '<%= yeoman.dist %>/css/blox.min.css': [
+            '<%= yeoman.dist %>/css/blox.css'
+          ]
+        }
+      }
     },
     htmlmin: {
       dist: {
@@ -312,6 +321,13 @@ module.exports = function (grunt) {
         dest: '.tmp/css/',
         src: '{,*/}*.css'
       },
+      bloxcss: {
+        expand: true,
+        dot: true,
+        cwd: '.tmp/css/',
+        dest: '<%= yeoman.dist %>/css/',
+        src: 'blox.css'
+      },
       fonts: {
         expand: true,
         dot: true,
@@ -361,7 +377,7 @@ module.exports = function (grunt) {
         'copy:fonts'
       ],
       dist: [
-        'compass',
+        'compass:dist',
         'copy:styles',
         'imagemin',
         'svgmin',
@@ -403,6 +419,8 @@ module.exports = function (grunt) {
     'uglify',
     'modernizr',
     'copy:dist',
+    'copy:bloxcss',
+    'cssmin:bloxcss',
     //'rev',
     'usemin'
   ]);
