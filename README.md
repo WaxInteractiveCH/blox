@@ -1,7 +1,6 @@
-#blox  [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/) [![GitHub version](https://badge.fury.io/gh/SQLIagencych%2Fblox.png)](http://badge.fury.io/gh/SQLIagencych%2Fblox)
-====
+#blox
 
-### A Component Library 
+![Blox](https://dl.dropboxusercontent.com/u/7430783/img/blox_logo.png)
 
 **Blox** is a Component Library project.  It's built by and for [Wax Interactive](https://github.com/waxinteractivech), but if you find it useful, feel free to clone, fork or report issues.  
 
