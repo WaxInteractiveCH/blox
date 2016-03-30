@@ -1,6 +1,6 @@
 # Blox
 
-![Blox](https://camo.githubusercontent.com/bba6be04d6592f9c67633a55835a2ce270a6b753/68747470733a2f2f646c2e64726f70626f7875736572636f6e74656e742e636f6d2f752f373433303738332f696d672f626c6f785f6c6f676f2e706e67)
+![Blox](https://dl.dropboxusercontent.com/u/7430783/img/blox_logo.png)
 
 **Blox** is a Component Library project.  It's built by and for [Wax Interactive](https://github.com/waxinteractivech), but if you find it useful, feel free to clone, fork or report issues.  
 
