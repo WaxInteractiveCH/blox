@@ -3,7 +3,7 @@
 
 ### A Component Library 
 
-**Blox** is a Component Library project.  It's built by and for  [SQLI Agency Switzerland](https://github.com/sqliagencych), but if you find it useful, feel free to clone, fork or report issues.  
+**Blox** is a Component Library project.  It's built by and for [Wax Interactive](https://github.com/waxinteractivech), but if you find it useful, feel free to clone, fork or report issues.  
 
 
 ### Install
@@ -19,4 +19,4 @@ When completed, you'll be able to run the various Grunt commands provided from t
 
 ## Copyright and license
 
-Copyright 2013 SQLI Agency CH, Inc under [the MIT license](LICENSE).
+Copyright 2013 Wax Interactive CH, under [the MIT license](LICENSE).
